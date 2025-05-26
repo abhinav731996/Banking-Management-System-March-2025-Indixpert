@@ -214,7 +214,7 @@ void withdraw()
                             while (getchar() != '\n')
                                 ;
                         }
-                        if (amt > 100 && amt <= balance[i])
+                        if (amt > 100 && amt <= balance[i] && amt%100 == 0 && amt<100000)
                         {
                             balance[i] -= amt;
                             printf("\nWithdrawn %d successfully.\n New Balance: %d\n", amt, balance[i]);
@@ -305,7 +305,7 @@ void deposit()
                             while (getchar() != '\n')
                                 ;
                         }
-                        if (amt >= 100)
+                        if (amt > 0 && amt%100 == 0)
                         {
                             balance[i] += amt;
                             printf("\nDeposit %d successfully.\n New Balance: %d\n", amt, balance[i]);
@@ -317,7 +317,7 @@ void deposit()
                         }
                         break;
                     }
-                    break;
+                    
                 }
                 else
                 {
@@ -327,7 +327,7 @@ void deposit()
         }
         else
         {
-            printf("Invalid input! Please enter valid ID & try again.\n");
+            printf("\nInvalid input! Please enter valid ID & try again.\n");
             while (getchar() != '\n')
                 ;
         }
