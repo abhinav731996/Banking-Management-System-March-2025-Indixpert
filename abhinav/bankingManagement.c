@@ -302,7 +302,7 @@ void deposit()
                             while (getchar() != '\n')
                                 ;
                         }
-                        if (amt > 0 && amt%100 == 0)
+                        if (amt > 100 && amt%100 == 0 && amt < 100000)
                         {
                             balance[i] += amt;
                             printf("\nDeposit %d successfully.\n New Balance: %d\n", amt, balance[i]);
