@@ -5,7 +5,7 @@
 int choice;
 int id[5];
 char name[5][30];
-char father[5][30];
+char father[5][30]; 
 int age[5];
 long long int accountNo[5];
 long long int aadharNo[5];

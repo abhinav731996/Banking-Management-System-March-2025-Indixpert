@@ -3,7 +3,7 @@
 
 // global variable
 int choice;
-int id[5];
+int id[5]; 
 char name[5][30];
 char father[5][30];
 int age[5];
