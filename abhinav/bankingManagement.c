@@ -36,8 +36,7 @@ int main()
         else
         {
             printf("\nInvalid input! Enter a number.\n");
-            while (getchar() != '\n')
-                ; // Clear input buffer
+            while (getchar() != '\n'); // Clear input buffer
             continue;
         }
 
@@ -113,8 +112,7 @@ void createAccount()
         else
         {
             printf("\nInvalid output! Please enter only number.\n");
-            while (getchar() != '\n')
-                ; // clear input buffer
+            while (getchar() != '\n'); // clear input buffer
         }
     }
 
@@ -271,8 +269,7 @@ void checkBalance()
         else
         {
             printf("\nInvalid input! Enter valid ID.\n");
-            while (getchar() != '\n')
-                ; // Clear input buffer
+            while (getchar() != '\n'); // Clear input buffer
             continue;
         }
         
