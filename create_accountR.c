@@ -31,10 +31,10 @@ void createAccount()
     printf("Generated Id: %d\n", &id[count]);
 
     printf("Enter Name: ");
-    scanf("%[^\n]", name[count]);
+    scanf(" %[^\n]", name[count]);
 
     printf("Enter Father's Name: ");
-    scanf("%[^\n]", father[count]);
+    scanf(" %[^\n]", father[count]);
 
     printf("enter age: ");
     while(scanf("%d", &age[count]) !=1)
@@ -92,7 +92,7 @@ void createAccount()
         }
     }
     printf("Enter Opening Balance(Min 500): ");
-    scanf("&d", &balance[count]);
+    scanf("%d", &balance[count]);
     if(balance[count] < 500)
     {
         printf("Error: Opening Balance must be at least 500. \n");
