@@ -23,7 +23,7 @@ void deposit()
 
         if (temp >= 100 && temp <= 100000)
         {
-            amount[i] = temp;  
+            amount[i] += temp;  
             i++;              
 
             printf("Thank you\n");
